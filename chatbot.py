@@ -18,12 +18,6 @@ with st.sidebar:
     - This chatbot uses temporary conversational memory.
     - Previous chats will not be saved after closing or restarting the application.
     """)
-    st.markdown("---")
-    st.write("""
-    #### Author: Sreejith T
-    📧 Email: sreejith.py3@gmail.com     
-    🌐 GitHub: https://github.com/Sreejith-005
-    """)
 
     if st.button("🗑️ Clear chart"):
         st.session_state.messages = [{
@@ -43,6 +37,13 @@ with st.sidebar:
             """
         }]
         st.rerun()
+
+    st.markdown("---")
+    st.write("""
+      #### Author: Sreejith T
+      📧 Email: sreejith.py3@gmail.com     
+      🌐 GitHub: https://github.com/Sreejith-005
+      """)
 
 llm = ChatGroq(groq_api_key=st.secrets["GROQ_API_KEY"],
                  model="llama-3.3-70b-versatile")
