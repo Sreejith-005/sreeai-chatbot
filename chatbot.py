@@ -12,12 +12,6 @@ st.subheader("🧠 Chatbot with Temporary Conversational Memory")
 with st.sidebar:
     st.title("🤖 SreeAI")
     st.success("✅ Powered by Ollama")
-    st.markdown("---")
-    st.markdown("#### ⚠️ Important Note")
-    st.info("""
-    - This chatbot uses temporary conversational memory.
-    - Previous chats will not be saved after closing or restarting the application.
-    """)
 
     if st.button("🗑️ Clear chart"):
         st.session_state.messages = [{
@@ -37,6 +31,13 @@ with st.sidebar:
             """
         }]
         st.rerun()
+
+    st.markdown("---")
+    st.markdown("#### ⚠️ Important Note")
+    st.info("""
+      - This chatbot uses temporary conversational memory.
+      - Previous chats will not be saved after closing or restarting the application.
+      """)
 
     st.markdown("---")
     st.write("""
