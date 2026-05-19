@@ -38,7 +38,7 @@ with st.sidebar:
         }]
         st.rerun()
 
-llm = ChatGroq(groq_api_key="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",
+llm = ChatGroq(groq_api_key=st.secrets["GROQ_API_KEY"],
                  model="llama-3.3-70b-versatile")
 
 if "messages" not in st.session_state:
