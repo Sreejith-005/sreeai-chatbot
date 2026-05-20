@@ -2,6 +2,8 @@
 
 SreeAI is a modern AI chatbot built using Streamlit, LangChain, and Groq LLMs. It supports real-time streaming responses, temporary conversational memory, and a clean chat interface similar to ChatGPT. This model only has memory untill 2023 year.
 
+Live demo link: https://sreeai.streamlit.app
+
 ---
 
 ## 🚀 Features
