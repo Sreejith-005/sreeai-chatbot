@@ -37,6 +37,7 @@ with st.sidebar:
     st.info("""
         - This chatbot uses temporary conversational memory.
         - Previous chats will not be saved after closing or restarting the application.
+        - This model only has memory untill 2023 year.
         """)
     
     st.markdown("---")
